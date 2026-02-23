@@ -1,0 +1,18 @@
+// src/services/profile.js
+import { supabase } from '../lib/supabaseClient';
+
+export async function getProfile(userId) {
+  const { data, error } = await supabase.from('profiles').select('*').eq('id', userId).single();
+  if (error) throw error;
+  return data;
+}
+
+export async function updateProfile(userId, updates) {
+  const { data, error } = await supabase
+    .from('profiles')
+    .update(updates)
+    .eq('id', userId)
+    .select();
+  if (error) throw error;
+  return data[0];
+}

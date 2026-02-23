@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "title": "Date"
+    },
+    "title": {
+      "type": "string",
+      "title": "Title"
+    },
+    "start_time": {
+      "type": "string",
+      "title": "Start Time"
+    },
+    "end_time": {
+      "type": "string",
+      "title": "End Time"
+    },
+    "estimated_minutes": {
+      "type": "number",
+      "title": "Estimated Minutes",
+      "default": 60
+    },
+    "task_id": {
+      "type": "string",
+      "title": "Linked Task ID"
+    },
+    "category": {
+      "type": "string",
+      "title": "Category"
+    },
+    "completed": {
+      "type": "boolean",
+      "title": "Completed",
+      "default": false
+    },
+    "color": {
+      "type": "string",
+      "title": "Color",
+      "default": "#8B5CF6"
+    }
+  },
+  "required": [
+    "date",
+    "title"
+  ],
+  "name": "TimeBlock"
+}

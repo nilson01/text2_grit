@@ -1,0 +1,62 @@
+{
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "title": "Date"
+    },
+    "tasks_created_count": {
+      "type": "number",
+      "title": "Tasks Created",
+      "default": 0
+    },
+    "tasks_completed_count": {
+      "type": "number",
+      "title": "Tasks Completed",
+      "default": 0
+    },
+    "completion_rate": {
+      "type": "number",
+      "title": "Completion Rate",
+      "default": 0
+    },
+    "unfinished_tasks_count": {
+      "type": "number",
+      "title": "Unfinished Tasks",
+      "default": 0
+    },
+    "planned_minutes": {
+      "type": "number",
+      "title": "Planned Minutes",
+      "default": 0
+    },
+    "focus_session_minutes": {
+      "type": "number",
+      "title": "Focus Session Minutes",
+      "default": 0
+    },
+    "color_level": {
+      "type": "number",
+      "title": "Color Level",
+      "default": 0
+    },
+    "habits_completed": {
+      "type": "number",
+      "title": "Habits Completed",
+      "default": 0
+    },
+    "habits_total": {
+      "type": "number",
+      "title": "Habits Total",
+      "default": 0
+    },
+    "feedback_insight": {
+      "type": "string",
+      "title": "Feedback Insight"
+    }
+  },
+  "required": [
+    "date"
+  ],
+  "name": "DailySummary"
+}

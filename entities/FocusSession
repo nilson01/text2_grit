@@ -1,0 +1,34 @@
+{
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "title": "Date"
+    },
+    "duration_minutes": {
+      "type": "number",
+      "title": "Duration Minutes"
+    },
+    "task_id": {
+      "type": "string",
+      "title": "Task ID"
+    },
+    "habit_id": {
+      "type": "string",
+      "title": "Habit ID"
+    },
+    "category": {
+      "type": "string",
+      "title": "Category"
+    },
+    "notes": {
+      "type": "string",
+      "title": "Notes"
+    }
+  },
+  "required": [
+    "date",
+    "duration_minutes"
+  ],
+  "name": "FocusSession"
+}

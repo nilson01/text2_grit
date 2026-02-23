@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "habit_id": {
+      "type": "string",
+      "title": "Habit ID"
+    },
+    "date": {
+      "type": "string",
+      "title": "Date"
+    },
+    "completed": {
+      "type": "boolean",
+      "title": "Completed",
+      "default": false
+    },
+    "count_value": {
+      "type": "number",
+      "title": "Count Value",
+      "default": 0
+    },
+    "duration_minutes": {
+      "type": "number",
+      "title": "Duration Minutes",
+      "default": 0
+    }
+  },
+  "required": [
+    "habit_id",
+    "date"
+  ],
+  "name": "HabitLog"
+}

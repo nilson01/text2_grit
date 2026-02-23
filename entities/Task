@@ -1,0 +1,62 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title"
+    },
+    "notes": {
+      "type": "string",
+      "title": "Notes"
+    },
+    "category": {
+      "type": "string",
+      "title": "Category"
+    },
+    "priority": {
+      "type": "string",
+      "title": "Priority",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "default": "medium"
+    },
+    "due_date": {
+      "type": "string",
+      "title": "Due Date"
+    },
+    "completed": {
+      "type": "boolean",
+      "title": "Completed",
+      "default": false
+    },
+    "completed_date": {
+      "type": "string",
+      "title": "Completed Date"
+    },
+    "estimated_minutes": {
+      "type": "number",
+      "title": "Estimated Minutes",
+      "default": 30
+    },
+    "is_recurring": {
+      "type": "boolean",
+      "title": "Is Recurring",
+      "default": false
+    },
+    "recurrence_pattern": {
+      "type": "string",
+      "title": "Recurrence Pattern"
+    },
+    "planned_date": {
+      "type": "string",
+      "title": "Planned Date"
+    }
+  },
+  "required": [
+    "title"
+  ],
+  "name": "Task"
+}

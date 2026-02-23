@@ -1,0 +1,45 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "icon": {
+      "type": "string",
+      "title": "Icon"
+    },
+    "achievement_type": {
+      "type": "string",
+      "title": "Achievement Type",
+      "enum": [
+        "streak",
+        "comeback",
+        "milestone",
+        "consistency"
+      ]
+    },
+    "unlocked": {
+      "type": "boolean",
+      "title": "Unlocked",
+      "default": false
+    },
+    "unlocked_date": {
+      "type": "string",
+      "title": "Unlocked Date"
+    },
+    "threshold": {
+      "type": "number",
+      "title": "Threshold"
+    }
+  },
+  "required": [
+    "title",
+    "achievement_type"
+  ],
+  "name": "Achievement"
+}
