@@ -1,32 +1,34 @@
-**Welcome to your Base44 project** 
+# Grit (Supabase Local Version)
 
-**About**
+This is the **Supabase-backed local version** of the Grit app (originally generated with Base44, now migrated to run independently).
 
-View and Edit  your app on [Base44.com](http://Base44.com) 
+## About
 
-This project contains everything you need to run your app locally.
+Grit is a productivity app for planning, focus, habits, and daily review.
 
-**Edit the code in your local development environment**
+This version runs locally using:
 
-Any change pushed to the repo will also be reflected in the Base44 Builder.
+- **React + Vite** (frontend)
+- **Supabase** (database/backend)
 
-**Prerequisites:** 
+Base44-specific backend dependencies and integrations have been removed.
 
-1. Clone the repository using the project's Git URL 
-2. Navigate to the project directory
-3. Install dependencies: `npm install`
-4. Create an `.env.local` file and set the right environment variables
+---
 
-```
-VITE_BASE44_APP_ID=your_app_id
-VITE_BASE44_APP_BASE_URL=your_backend_url
+## Prerequisites
 
-e.g.
-VITE_BASE44_APP_ID=cbef744a8545c389ef439ea6
-VITE_BASE44_APP_BASE_URL=https://my-to-do-list-81bfaad7.base44.app
-```
+Before running the app, make sure you have:
 
-Run the app: `npm run dev`
+1. **Node.js** installed (recommended: Node 18+)
+2. A **Supabase project** created
+3. The required Supabase tables created (`tasks`, `habits`, `habit_logs`, `time_blocks`, `focus_sessions`, `daily_summaries`, `achievements`)
 
-# test_grit
-# text2_grit
+---
+
+## Setup
+
+### 1) Clone the repository
+
+```bash
+git clone https://github.com/nilson01/test_grit.git
+cd test_grit
